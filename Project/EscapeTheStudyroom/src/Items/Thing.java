@@ -4,6 +4,7 @@ public class Thing {
     public static int ThingCount = 0;
 
     String _description = "No description available...";
+    String _name = "Unknown Item";
     int _ID = 0;
 
     public Thing(String arg1){ //arg1 = description
@@ -24,4 +25,5 @@ public class Thing {
     public int getID(){ //returns the ID of the Item.
         return _ID;
     }
+
 }
