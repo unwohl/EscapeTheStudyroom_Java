@@ -17,11 +17,11 @@ public class Thing {
         _ID = ThingCount;
     }
 
-    public String examine(){
+    public String examine(){ //returns the description of the inspected Item.
         return _description;
     }
 
-    public int getID(){
+    public int getID(){ //returns the ID of the Item.
         return _ID;
     }
 }

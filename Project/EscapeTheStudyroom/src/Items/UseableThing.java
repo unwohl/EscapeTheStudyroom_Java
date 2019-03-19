@@ -9,11 +9,11 @@ public class UseableThing extends Thing {
         _use_msg = arg2;
     }
 
-    public UseableThing(){
+    public UseableThing(){ //empty constructor
 
     }
 
-    public String use(){
+    public String use(){ //returns the message that is sent whenever the player uses the Item.
         return _use_msg;
     }
 }
