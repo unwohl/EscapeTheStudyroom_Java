@@ -9,21 +9,21 @@ public class CombineableThing extends UseableThing{
     public CombineableThing(String arg1,String arg2,String arg3,int arg4){
         super._description = arg1;
         if(arg2 == ""){
-            super._use_msg = _defaultUse;
+            this._use_msg = _defaultUse;
         }else{
-            super._use_msg = arg2;
+            this._use_msg = arg2;
         }
-        _combine_msg = arg3;
-        _combineID = arg4;
+        this._combine_msg = arg3;
+        this._combineID = arg4;
     }
 
-    public CombineableThing(int arg5){
-
+    public CombineableThing(int arg){
+        this._combineID = arg;
     }
 
     public void combine(int ID){
         if(ID == _combineID){
-
+            System.out.println("you combined "+ _name+" with "+items.getNameFromID(ID));
         }else{
             System.out.println(_abort);
         }

@@ -2,10 +2,16 @@ package Parser;
 import java.util.Scanner; 
 
  public class GameParser {
+     String scannerName = "";
+
     public GameParser(String arg1){
-    Scanner insertParser = new Scanner(arg1);
-    String insertString = insertParser.nextLine();
-    insertParser.close();
-    System.out.println(insertString);
+        scannerName = arg1;
+    }
+
+    public void parse(){
+        Scanner insertParser = new Scanner(scannerName);
+        String insertString = insertParser.nextLine();
+        insertParser.close();
+        System.out.println(insertString);
     }
 }

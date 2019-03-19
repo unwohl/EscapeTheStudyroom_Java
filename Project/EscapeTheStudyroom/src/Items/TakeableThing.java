@@ -6,16 +6,16 @@ public class TakeableThing extends UseableThing {
 
     public TakeableThing(String arg1, String arg2, String arg3){//arg1 = description, arg2 = use_msg, arg3 = take_msg
         if(arg2 == ""){
-            super._use_msg = "Nothing happened...";
+            this._use_msg = "Nothing happened...";
         }else{
-            super._use_msg = arg2;
+            this._use_msg = arg2;
         }
-        super._description = arg1;
-        take_msg = arg3;
+        this._description = arg1;
+        this.take_msg = arg3;
     }
 
     public TakeableThing(){
-        super._use_msg = "Nothing happened...";
+        this._use_msg = "Nothing happened...";
     }
 
     public String take(){
