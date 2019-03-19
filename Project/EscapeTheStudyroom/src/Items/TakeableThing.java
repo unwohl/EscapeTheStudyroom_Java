@@ -1,7 +1,10 @@
 package Items;
 
+import java.awt.*;
+
 public class TakeableThing extends UseableThing {
 
+    Inventory inventory = new Inventory();
     String take_msg = "You have taken this Item...";
 
     public TakeableThing(String arg1, String arg2, String arg3){//arg1 = description, arg2 = use_msg, arg3 = take_msg
@@ -18,7 +21,8 @@ public class TakeableThing extends UseableThing {
         this._use_msg = "Nothing happened...";
     }
 
-    public String take(){
-        return take_msg;
+    public void take(){
+        inventory.addToInventory(this);
+        System.out.println(take_msg);
     }
 }

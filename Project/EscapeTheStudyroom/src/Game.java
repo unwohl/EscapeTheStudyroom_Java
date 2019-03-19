@@ -9,9 +9,11 @@ public class Game {
         GameParser a = new GameParser("HAaaaaa");
         a.parse();
         addTestItems();
+
         for (Thing thing : Items.itemlist) {
             System.out.println(thing.examine());
         }
+
         for(int i = 0; i <= Thing.ThingCount; i++){
             System.out.println(items.getNameFromID(i+1));
         }
@@ -34,5 +36,14 @@ public class Game {
         Screwdriver.setName("Screwdriver");
         Screw.setName("Metal Screw");
         Soup.setName("Chicken Soup");
+        Soup.combine(4);
+        Soup.combine(5);
+        Spoon.take();
+        Soup.combine(4);
+        Soup.combine(5);
+        Screwdriver.take();
+        Screw.combine(6);
+        Screw.combine(8);
+
     }
 }

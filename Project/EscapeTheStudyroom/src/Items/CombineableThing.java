@@ -5,6 +5,7 @@ public class CombineableThing extends UseableThing{
     String _defaultUse = "you need to combine something with this.";
     String _combine_msg = "You tried to combine this with another item.";
     int _combineID = 0;
+    Inventory inventory = new Inventory();
 
     public CombineableThing(String arg1,String arg2,String arg3,int arg4){
         super._description = arg1;
@@ -22,9 +23,11 @@ public class CombineableThing extends UseableThing{
     }
 
     public void combine(int ID){
-        if(ID == _combineID){
+        if(ID == _combineID && inventory.itemInInventory(ID)){
             System.out.println("you combined "+ _name+" with "+items.getNameFromID(ID));
-        }else{
+        }else if(ID == _combineID) {
+            System.out.print("You do not have the required item in your inventory...");
+        } else {
             System.out.println(_abort);
         }
     }
