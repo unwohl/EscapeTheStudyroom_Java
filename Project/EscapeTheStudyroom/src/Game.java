@@ -1,8 +1,8 @@
-import Items.*;
+import Parser.*;
 
 public class Game {
-    public static void main(String[] args){
-        Thing shelf = new Thing();
-        UseableThing drawer = new UseableThing();
+    public static void main(String [] args){
+        GameParser a = new GameParser("HAaaaaa");
+
     }
 }
