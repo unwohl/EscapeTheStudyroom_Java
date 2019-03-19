@@ -9,14 +9,6 @@ public class Game {
         GameParser a = new GameParser("HAaaaaa");
         a.parse();
         addTestItems();
-
-        for (Thing thing : Items.itemlist) {
-            System.out.println(thing.examine());
-        }
-
-        for(int i = 0; i <= Thing.ThingCount; i++){
-            System.out.println(items.getNameFromID(i+1));
-        }
     }
 
     public static void addTestItems(){

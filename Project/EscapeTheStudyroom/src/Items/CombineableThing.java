@@ -25,6 +25,7 @@ public class CombineableThing extends UseableThing{
     public void combine(int ID){
         if(ID == _combineID && inventory.itemInInventory(ID)){
             System.out.println("you combined "+ _name+" with "+items.getNameFromID(ID));
+            inventory.removeFromInventorybyID(ID);
         }else if(ID == _combineID) {
             System.out.print("You do not have the required item in your inventory...");
         } else {
