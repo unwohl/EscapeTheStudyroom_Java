@@ -15,7 +15,7 @@ public class Items {
         return "";
     }
 
-    public void addItem(Thing thing){
+    public static void addItem(Thing thing){
         itemlist.add(thing);
     }
 }

@@ -9,10 +9,13 @@ public class Game {
         GameParser a = new GameParser("HAaaaaa");
         a.parse();
         addTestItems();
+        ItemInitializer.init();
     }
 
     public static void addTestItems(){
-        Thing Desk = new Thing("This is a wooden desk.");
-        Thing Wall = new Thing("You are looking at a wall... good job!");
+        Thing Desk = new Thing();
+        Desk.setName("Desk");
+        Thing Wall = new Thing();
+        Wall.setName("Wall");
     }
 }

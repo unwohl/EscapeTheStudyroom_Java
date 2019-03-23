@@ -19,13 +19,6 @@ public class Thing {
     int _ID;
     int _combineID;
 
-    public Thing(String arg1){ //arg1 = description
-        this._description = arg1;
-        ThingCount++;
-        this._ID = ThingCount;
-        items.addItem(this);
-    }
-
     public Thing(){
         ThingCount++;
         this._ID = ThingCount;
