@@ -12,7 +12,7 @@ public class StudyRoom extends Room{
     {
         this.roomName = roomName;
         this. _description = _description;
-        Room Study = new Room();
+        new StudyRoom();
     }
 
 public static void main(String args[])
