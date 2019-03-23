@@ -4,18 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Inventory {
-    public static List<Thing> inventory = new ArrayList<Thing>();
+    public static List<TakeableThing> inventory = new ArrayList<TakeableThing>();
 
     public Inventory(){
 
     }
 
-    public void addToInventory(Thing thing){
+    public void addToInventory(TakeableThing thing){
         inventory.add(thing);
     }
 
     public void removeFromInventorybyID(int ID){
-        for (Thing thing : inventory) {
+        for (TakeableThing thing : inventory) {
             if(thing._ID == ID){
                 inventory.remove(thing);
             }
@@ -23,7 +23,7 @@ public class Inventory {
     }
 
     public boolean itemInInventory(int ID){
-        for (Thing thing : inventory) {
+        for (TakeableThing thing : inventory) {
             if(thing._ID == ID){
                 return true;
             }

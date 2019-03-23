@@ -2,14 +2,19 @@ package Items;
 
 public class Thing {
     public static int ThingCount = 0;
+<<<<<<< HEAD
     public static Items items = new Items();
     public static Inventory inventory = new Inventory();
     static String _abort = "You cannot combine this.";
+=======
+>>>>>>> 1ad30c54ddebbdf925b11f1e7553bb253c7a118a
 
-    boolean _takeable = false;
-    boolean _useable = false;
-    boolean _combineable = false;
+    String _description = "No description available...";
+    String _name = "Unknown Item";
+    int _ID = 0;
+    Items items = new Items();
 
+<<<<<<< HEAD
     String _description;
     String _name;
     String _use_msg;
@@ -18,6 +23,14 @@ public class Thing {
 
     int _ID;
     int _combineID;
+=======
+    public Thing(String arg1){ //arg1 = description
+        this._description = arg1;
+        ThingCount++;
+        this._ID = ThingCount;
+        items.addItem(this);
+    }
+>>>>>>> 1ad30c54ddebbdf925b11f1e7553bb253c7a118a
 
     public Thing(){
         ThingCount++;
@@ -37,6 +50,7 @@ public class Thing {
         this._name = arg;
     }
 
+<<<<<<< HEAD
     public String take(){
         if(this._takeable) {
             inventory.addToInventory(this);
@@ -83,4 +97,6 @@ public class Thing {
                 break;
         }
     }
+=======
+>>>>>>> 1ad30c54ddebbdf925b11f1e7553bb253c7a118a
 }
