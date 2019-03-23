@@ -2,18 +2,20 @@ package Items;
 
 public class Thing {
     public static int ThingCount = 0;
+    public static Items items = new Items();
+    public static Inventory inventory = new Inventory();
 
-    String _description = "No description available...";
-    String _name = "Unknown Item";
-    int _ID = 0;
-    Items items = new Items();
+    boolean _takeable = false;
+    boolean _useable = false;
+    boolean _combineable = false;
 
-    public Thing(String arg1){ //arg1 = description
-        this._description = arg1;
-        ThingCount++;
-        this._ID = ThingCount;
-        items.addItem(this);
-    }
+    String _description;
+    String _name;
+    String _use_msg;
+    String _take_msg;
+    String _combine_msg;
+
+    int _ID;
 
     public Thing(){
         ThingCount++;
@@ -33,4 +35,8 @@ public class Thing {
         this._name = arg;
     }
 
+    public void take(){
+        inventory.addToInventory(this);
+        System.out.println(_take_msg);
+    }
 }
