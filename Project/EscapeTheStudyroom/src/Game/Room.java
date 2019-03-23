@@ -7,7 +7,7 @@ public class Room {
     int room_Id = 0;
     String roomName = "";
     boolean active;
-    String _description = "";
+    String _description = "lol du figga";
     Items _items = new Items();
 
     public Room()

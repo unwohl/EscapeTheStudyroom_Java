@@ -10,7 +10,13 @@ public class StudyRoom extends Room{
 
     public StudyRoom()
     {
-        Room
+        this.roomName = roomName;
+        this. _description = _description;
+        Room Study = new Room();
     }
 
+public static void main(String args[])
+{
+    new StudyRoom();
+}
 }
