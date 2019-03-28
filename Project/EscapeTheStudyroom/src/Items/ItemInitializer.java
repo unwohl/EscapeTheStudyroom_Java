@@ -83,9 +83,10 @@ public class ItemInitializer {
                             thing._combine_msg = values[1];
                             break;
                         case "combineid":
-                            thing._combineID = (int)values[1];
+                            thing._combineID = Integer.parseInt(values[1]);
                             break;
                         case "ID":
+                            thing._ID = Integer.parseInt(values[1]);
                             break;
 
                     }

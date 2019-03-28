@@ -75,23 +75,4 @@ public class Thing {
             }
         }
     }
-
-    public void setType(String type){
-        switch(type){
-            case "combineable":
-                this._combineable = true;
-                break;
-            case "takeable":
-                this._takeable = true;
-                break;
-            case "useable":
-                this._useable = true;
-                break;
-            case "combinetake":
-                this._takeable = true;
-                this._combineable = true;
-            default:
-                break;
-        }
-    }
 }

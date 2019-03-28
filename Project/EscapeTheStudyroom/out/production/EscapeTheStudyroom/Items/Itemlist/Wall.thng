@@ -1,7 +1,7 @@
+name : Wall
 useable : false
 takeable : false
 combineable : false
-name : Wall
 description : It's just a wall...
 usemsg : 
 takemsg : 
