@@ -10,6 +10,7 @@ public class Game {
     public static void main(String [] args){
         addTestItems();
         ItemInitializer.init();
+        examineAll();
         Scanner scannerInsert = new Scanner(System.in);
         String insert = scannerInsert.next();
         System.out.println(insert);
@@ -23,5 +24,11 @@ public class Game {
         Wall.setName("Wall");
         Thing Key = new Thing();
         Key.setName("Shelf_Key");
+    }
+
+    public static void examineAll(){
+        for(Thing thing : Items.itemlist){
+            System.out.println(thing.examine());
+        }
     }
 }

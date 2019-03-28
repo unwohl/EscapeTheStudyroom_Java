@@ -15,7 +15,7 @@ public class Items {
         return "";
     }
 
-    public static Thing getThingFromName(String name){
+    public Thing getThingFromName(String name){
         for(Thing thing : itemlist){
             if(thing._name == name){
                 return thing;

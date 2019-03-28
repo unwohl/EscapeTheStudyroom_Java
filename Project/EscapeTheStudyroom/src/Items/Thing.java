@@ -6,18 +6,18 @@ public class Thing {
     public static Inventory inventory = new Inventory();
     static String _abort = "You cannot combine this.";
 
-    boolean _useable = false;
-    boolean _takeable = false;
-    boolean _combineable = false;
+    public boolean _useable = false;
+    public boolean _takeable = false;
+    public boolean _combineable = false;
 
-    String _description;
-    String _name;
-    String _use_msg;
-    String _take_msg;
-    String _combine_msg;
+    public String _description;
+    public String _name;
+    public String _use_msg;
+    public String _take_msg;
+    public String _combine_msg;
 
-    int _ID;
-    int _combineID;
+    public int _ID;
+    public int _combineID;
 
     public Thing(){
         ThingCount++;
