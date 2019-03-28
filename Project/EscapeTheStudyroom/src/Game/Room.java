@@ -1,6 +1,6 @@
 package Game;
 
-import Items.Items;
+import Items.*;
 
 public class Room {
 
@@ -9,7 +9,6 @@ public class Room {
     boolean active; //Nötig ?! Falls ja? Wie?
     String _description = "lol du figga";
     Items _items = new Items();
-    hashset<String>();
 
     public Room(String roomName)
     {

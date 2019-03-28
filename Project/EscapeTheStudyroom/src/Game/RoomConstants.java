@@ -1,7 +1,13 @@
 package Game;
 
+import Items.*;
+
+import java.util.*;
+
 public interface RoomConstants {
 
-public List<Things> = new list<>();
+    public ArrayList<Thing> itemsInRoom = new ArrayList<Thing>();
+
+
 
 }
