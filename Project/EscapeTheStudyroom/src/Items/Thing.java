@@ -25,6 +25,13 @@ public class Thing {
         items.addItem(this);
     }
 
+    public Thing(String name){
+        ThingCount++;
+        this._ID = ThingCount;
+        items.addItem(this);
+        this.setName(name);
+    }
+
     public String examine(){ //returns the description of the inspected Item.
         return this._description;
     }
@@ -66,25 +73,6 @@ public class Thing {
             } else {
                 System.out.println(_abort);
             }
-        }
-    }
-
-    public void setType(String type){
-        switch(type){
-            case "combineable":
-                this._combineable = true;
-                break;
-            case "takeable":
-                this._takeable = true;
-                break;
-            case "useable":
-                this._useable = true;
-                break;
-            case "combinetake":
-                this._takeable = true;
-                this._combineable = true;
-            default:
-                break;
         }
     }
 }

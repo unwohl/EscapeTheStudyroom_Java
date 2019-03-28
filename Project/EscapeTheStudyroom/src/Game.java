@@ -9,6 +9,7 @@ public class Game {
 
     public static void main(String [] args){
         addTestItems();
+        ItemInitializer.init();
         Scanner scannerInsert = new Scanner(System.in);
         String insert = scannerInsert.next();
         System.out.println(insert);
