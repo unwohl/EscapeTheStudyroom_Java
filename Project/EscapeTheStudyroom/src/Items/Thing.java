@@ -25,6 +25,13 @@ public class Thing {
         items.addItem(this);
     }
 
+    public Thing(String name){
+        ThingCount++;
+        this._ID = ThingCount;
+        items.addItem(this);
+        this.setName(name);
+    }
+
     public String examine(){ //returns the description of the inspected Item.
         return this._description;
     }

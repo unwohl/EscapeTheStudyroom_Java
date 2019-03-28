@@ -42,29 +42,48 @@ public class ItemInitializer {
             try {
                 Scanner sc = new Scanner(file);
                 while(sc.hasNextLine()){
+                    Thing thing = new Thing();
                     String line = sc.nextLine();
                     String[] values = line.split(" : ");
                     switch(values[0]){
                         case "name":
                             if(!Items.itemExists(values[1])){
-                                new Thing();
+                                new Thing(values[1]);
+                                thing = Items.getThingFromName(values[1]);
+                            }else{
+                                thing = Items.getThingFromName(values[1]);
+                                thing.setName(values[1]);
                             }
                             break;
                         case "useable":
+                            if(values[1] == "true"){
+                                thing._useable = true;
+                            }
                             break;
                         case "takeable":
+                            if(values[1] == "true"){
+                                thing._takeable = true;
+                            }
                             break;
                         case "combineable":
+                            if(values[1] == "true"){
+                                thing._combineable = true;
+                            }
                             break;
                         case "description":
+                            thing._description = values[1];
                             break;
                         case "usemsg":
+                            thing._use_msg = values[1];
                             break;
                         case "takemsg":
+                            thing._take_msg = values[1];
                             break;
                         case "combinemsg":
+                            thing._combine_msg = values[1];
                             break;
                         case "combineid":
+                            thing._combineID = (int)values[1];
                             break;
                         case "ID":
                             break;
