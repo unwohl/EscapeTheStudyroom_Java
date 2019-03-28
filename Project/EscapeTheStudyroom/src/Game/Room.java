@@ -6,7 +6,7 @@ public class Room {
 
     int room_Id = 0;
     String roomName = "";
-    boolean active;
+    boolean active; //Nötig ?! Falls ja? Wie?
     String _description = "lol du figga";
     Items _items = new Items();
 
