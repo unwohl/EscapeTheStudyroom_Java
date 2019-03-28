@@ -9,6 +9,7 @@ public class Room {
     boolean active;
     String _description = "lol du figga";
     Items _items = new Items();
+    hashset<String>();
 
     public Room(String roomName)
     {
