@@ -3,7 +3,6 @@ useable : false
 takeable : true
 combineable : true
 description : This seems to be the Key for the shelf...
-usemsg : 
 takemsg : You took the key...
 combinemsg : You unlocked the top shelf of the desk
 combineid : 1

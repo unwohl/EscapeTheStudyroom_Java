@@ -3,8 +3,4 @@ useable : false
 takeable : false
 combineable : false
 description : It's just a wall...
-usemsg : 
-takemsg : 
-combinemsg : 
-combineid : 
 ID : 2
