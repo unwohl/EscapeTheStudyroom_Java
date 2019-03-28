@@ -11,7 +11,7 @@ public class ItemInitializer {
     public static void init() {
 
         for ( Thing item : Items.itemlist ) {
-            String fileName = "src\\Items\\Itemlist\\" + item._name + ".json";
+            String fileName = "src\\Items\\Itemlist\\" + item._name + ".thng";
             if ( !(new File(fileName).exists())) {
                 File file = new File(fileName);
 
