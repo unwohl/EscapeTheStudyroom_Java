@@ -30,4 +30,12 @@ public class Inventory {
         }
         return false;
     }
+
+    public boolean itemInInventory(Thing thing){
+        if(inventory.contains(thing)){
+            return true;
+        }else{
+            return false;
+        }
+    }
 }

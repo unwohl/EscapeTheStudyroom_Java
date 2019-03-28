@@ -1,17 +1,25 @@
 package Parser;
 import java.util.Scanner; 
 
- public class GameParser {
-     String scannerName = "";
+public class GameParser {
+    String insertDefault = "";
 
-    public GameParser(String arg1){
-        scannerName = arg1;
+    public GameParser ()
+    {
+        Scanner scannerInsert = new Scanner(System.in);
+        String insert = scannerInsert.nextLine();
+        scannerInsert.close();
+        System.out.println("WWWW" + insert);
     }
 
-    public void parse(){
-        Scanner insertParser = new Scanner(scannerName);
-        String insertString = insertParser.nextLine();
-        insertParser.close();
-        System.out.println(insertString);
+    public void userInput ()
+    {
+        Scanner scannerInsert = new Scanner(System.in);
+        String insert = scannerInsert.nextLine();
+        scannerInsert.close();
+        System.out.println("WWWW" + insert);
     }
 }
+
+
+

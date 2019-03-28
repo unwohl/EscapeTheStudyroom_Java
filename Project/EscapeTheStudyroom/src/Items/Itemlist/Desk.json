@@ -1,0 +1,10 @@
+useable : true
+takeable : false
+combineable : true
+name : Desk
+description : This is the Desk you work on every day.
+usemsg : You try to open the top shelf of the desk but it's locked...
+takemsg : 
+combinemsg : You unlocked the top shelf.
+combineid : 3
+ID : 1
