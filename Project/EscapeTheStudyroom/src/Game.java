@@ -17,5 +17,7 @@ public class Game {
         Desk.setName("Desk");
         Thing Wall = new Thing();
         Wall.setName("Wall");
+        Thing Key = new Thing();
+        Key.setName("Shelf_Key");
     }
 }

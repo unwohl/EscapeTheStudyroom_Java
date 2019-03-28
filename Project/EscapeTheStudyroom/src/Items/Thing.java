@@ -39,8 +39,12 @@ public class Thing {
 
     public String take(){
         if(this._takeable) {
-            inventory.addToInventory(this);
-            return this._take_msg;
+            if(!inventory.itemInInventory(this)) {
+                inventory.addToInventory(this);
+                return this._take_msg;
+            }else{
+                return "This item is already in your inventory!";
+            }
         }
         return null;
     }
