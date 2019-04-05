@@ -1,6 +1,10 @@
 package Parser;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+import src.Items.Items;
 
 public class GameParser {
     
@@ -9,13 +13,20 @@ public class GameParser {
 
     public GameParser () throws IOException {
     	
-        String a = eingabe.readLine();
+        String nPaarWoerter = eingabe.readLine();
+        zerlegteEingabe = nPaarWoerter.split(" ");
         
     }
 
-    public void verarbeiteEingabe () //Switch Bedingung
+    public void verarbeiteEingabe2 () //Switch Bedingung
     {
+       switch (zerlegteEingabe[0]) {
+       case ("use"):
+    	   Items.getThingFromName(zerlegteEingabe[1]).use();
+       	   break;
+       case ("examine") //take und combine
        
+       }
     }
 }
 
