@@ -9,18 +9,19 @@ public class Game {
 
     private static String text = "";
     private static JTextArea lbl = new JTextArea();
+    public static JTextField textPanel = new JTextField();
 
     public static void main(String [] args){
         ItemInitializer.init();
         JFrame frame = new JFrame();
         frame.setBounds(100,100,640,800);
-        JTextField textPanel = new JTextField();
         frame.add(textPanel);
         textPanel.setBounds(50,500,540,50);
         frame.add(lbl);
         frame.setBackground(Color.darkGray);
         lbl.setBackground(Color.GRAY);
         lbl.setLocation(200,200);
+        lbl.setEnabled(false);
         lbl.setText("Yeet Yeet Yeet Yeet Yeet Yeet");
         doEverything();
         frame.setVisible(true);
