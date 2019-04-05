@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a8477f1-f92a-4990-b91b-a07d0593d763" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Control/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Control/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EscapeTheStudyroom/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EscapeTheStudyroom/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EscapeTheStudyroom/Game.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EscapeTheStudyroom/Game/Room.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EscapeTheStudyroom/Game/RoomConstants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EscapeTheStudyroom/Game/RoomInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EscapeTheStudyroom/Game/StudyRoom.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EscapeTheStudyroom/Items/Items.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EscapeTheStudyroom/Items/Items.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -218,7 +225,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554494320646" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554494564410" />
     <property name="last.edited.regexp" value="\\test\\terst.txt&#10;" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -270,7 +277,7 @@
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1881663" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1881663" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -278,8 +285,8 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.14425163" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.14425163" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
