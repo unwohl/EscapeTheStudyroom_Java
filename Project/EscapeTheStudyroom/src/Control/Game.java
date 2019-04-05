@@ -1,4 +1,5 @@
-import Parser.*;
+package Control;
+
 import Items.*;
 
 import javax.swing.*;
