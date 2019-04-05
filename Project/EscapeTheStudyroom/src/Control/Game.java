@@ -32,8 +32,8 @@ public class Game {
         scannerInsert.close();
     }
 
-    public static String getTextField(JTextField fuckoff){
-        return fuckoff.getText();
+    public static String getTextField(){
+        return textPanel.getText();
     }
 
     public static void addTestItems(){
