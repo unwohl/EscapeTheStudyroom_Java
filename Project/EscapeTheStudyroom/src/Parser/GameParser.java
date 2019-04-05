@@ -18,7 +18,7 @@ public class GameParser {
         
     }
 
-    public void verarbeiteEingabe2 () //Switch Bedingung
+    public void verarbeiteEingabe () //Switch Bedingung
     {
        switch (zerlegteEingabe[0]) {
        case ("use"):
