@@ -15,7 +15,7 @@ public class GameParser {
 
     public GameParser () throws IOException {
     	
-        String nPaarWoerter = Game.getTextField();
+        String nPaarWoerter = Game.getTextField();// Which input?!?
         zerlegteEingabe = nPaarWoerter.split(" ");
         
     }
