@@ -11,6 +11,8 @@ public class Game {
         addTestItems();
         ItemInitializer.init();
         examineAll();
+        useAll();
+        takeAll();
         Scanner scannerInsert = new Scanner(System.in);
         String insert = scannerInsert.next();
         System.out.println(insert);
@@ -18,17 +20,27 @@ public class Game {
     }
 
     public static void addTestItems(){
-        Thing Desk = new Thing();
-        Desk.setName("Desk");
-        Thing Wall = new Thing();
-        Wall.setName("Wall");
-        Thing Key = new Thing();
-        Key.setName("Shelf_Key");
+
     }
 
     public static void examineAll(){
         for(Thing thing : Items.itemlist){
             System.out.println(thing.examine());
+        }
+    }
+
+    public static void useAll(){
+        for(Thing thing : Items.itemlist){
+            System.out.println(thing.use());
+        }
+    }
+
+    public static void takeAll(){
+        for(Thing thing : Items.itemlist){
+            System.out.println(thing.take());
+        }
+        for(Thing thing : Inventory.inventory){
+            System.out.println(thing._name);
         }
     }
 }

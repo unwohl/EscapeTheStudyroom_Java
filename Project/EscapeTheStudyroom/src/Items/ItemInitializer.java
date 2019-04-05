@@ -58,17 +58,20 @@ public class ItemInitializer {
                             name = values[1];
                             break;
                         case "useable":
-                            if(values[1] == "true"){
+                            if(values[1].equals("true")){
                                 items.getThingFromName(name)._useable = true;
+                                System.out.println("Yup...");
+                                break;
                             }
+                            System.out.println(values[1]);
                             break;
                         case "takeable":
-                            if(values[1] == "true"){
+                            if(values[1].equals("true")){
                                 items.getThingFromName(name)._takeable = true;
                             }
                             break;
                         case "combineable":
-                            if(values[1] == "true"){
+                            if(values[1].equals("true")){
                                 items.getThingFromName(name)._combineable = true;
                             }
                             break;

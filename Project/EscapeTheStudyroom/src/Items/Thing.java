@@ -4,7 +4,7 @@ public class Thing {
     public static int ThingCount = 0;
     public static Items items = new Items();
     public static Inventory inventory = new Inventory();
-    static String _abort = "You cannot combine this.";
+    static String _abort = "You can't do that...";
 
     public boolean _useable = false;
     public boolean _takeable = false;
@@ -53,14 +53,14 @@ public class Thing {
                 return "This item is already in your inventory!";
             }
         }
-        return null;
+        return _abort;
     }
 
     public String use(){ //returns the message that is sent whenever the player uses the Item.
         if(this._useable){
             return this._use_msg;
         }
-        return null;
+        return _abort;
     }
 
     public void combine(int ID){
