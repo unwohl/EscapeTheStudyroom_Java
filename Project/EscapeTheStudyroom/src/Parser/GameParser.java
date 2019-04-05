@@ -1,23 +1,43 @@
 package Parser;
-import java.util.Scanner; 
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+import Items.*;
+import Control.*;
+import Game.*;
 
 public class GameParser {
-    String insertDefault = "";
+    
+	String [] zerlegteEingabe;
+	//BufferedReader eingabe = new BufferedReader(new InputStreamReader(System.in));
 
-    public GameParser ()
-    {
-        Scanner scannerInsert = new Scanner(System.in);
-        String insert = scannerInsert.nextLine();
-        scannerInsert.close();
-        System.out.println("WWWW" + insert);
+    public GameParser () throws IOException {
+    	
+        String nPaarWoerter = Game.getTextField();// Which input?!?
+        zerlegteEingabe = nPaarWoerter.split(" ");
+        
     }
 
-    public void userInput ()
+    public void verarbeiteEingabe () //Switch Bedingung
     {
-        Scanner scannerInsert = new Scanner(System.in);
-        String insert = scannerInsert.nextLine();
-        scannerInsert.close();
-        System.out.println("WWWW" + insert);
+       switch (zerlegteEingabe[0]) {
+       case ("use"):
+    	   Items.getThingFromName(zerlegteEingabe[1]).use();
+       	   break;
+       case ("examine"): //take und combine
+    	   Items.getThingFromName(zerlegteEingabe[1]).examine();
+    	   break;
+       case ("take"):
+    	   Items.getThingFromName(zerlegteEingabe[1]).take();
+    	   break;
+       case ("combine"):
+    	   Items.getThingFromName(zerlegteEingabe[1]).combine(Items.getIdFromName(zerlegteEingabe[2]));
+       	   break;
+       default:
+    	   System.out.println("FUCK YOU");
+       }
     }
 }
 

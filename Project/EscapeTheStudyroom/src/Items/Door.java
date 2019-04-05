@@ -1,15 +1,24 @@
 package Items;
 
-import Game.Room;
+import Control.Room;
 
-public class Door extends Thing{
-    public void unlock( Room room ){
+public class Door extends Thing {
 
+    public void unlock(String roomName)
+    {
+        Room.enter(roomName);
     }
 
-    public void enter(String figga){
+
+    public void enter(String figga) {
 
         Room.enter(figga);
 
+        /*
+        public String use()
+        {
+            return null;
+        }
+        */
     }
 }

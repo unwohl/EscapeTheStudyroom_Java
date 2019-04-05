@@ -1,6 +1,4 @@
-package Game;
-
-import Items.*;
+package Control;
 
 import java.util.List;
 

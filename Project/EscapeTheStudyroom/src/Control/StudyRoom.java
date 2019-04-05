@@ -2,9 +2,7 @@
     DEPRECATED - SIEHE ROOMINITIALIZER
 */
 
-package Game;
-
-import Items.*;
+package Control;
 
 public class StudyRoom implements RoomConstants {
 
