@@ -24,8 +24,13 @@ public class GameParser {
        case ("use"):
     	   Items.getThingFromName(zerlegteEingabe[1]).use();
        	   break;
-       case ("examine") //take und combine
-       
+       case ("examine"): //take und combine
+    	   
+    	   break;
+       case ("take"):
+    	   
+    	   break;
+       case ("combine"):
        }
     }
 }
