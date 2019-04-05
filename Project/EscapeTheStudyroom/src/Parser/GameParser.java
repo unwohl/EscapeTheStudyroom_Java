@@ -8,12 +8,11 @@ public class GameParser {
     
     public BufferedReader userInput;
 
-    public GameParser () throws 
-    {
+    public GameParser () throws IOException {
         String eingabe = userInput.readLine();
     }
 
-   public static void main (String [] args) {
+   public static void main (String [] args) throws IOException {
        GameParser a = new GameParser();
        
    }
