@@ -8,7 +8,7 @@ import java.util.List;
 public class Items {
     public static List<Thing> itemlist = new ArrayList<Thing>();
 
-    public String getNameFromID(int ID){
+    public static String getNameFromID(int ID){
         for (Thing thing:itemlist) {
             if(ID == thing.getID()){
                 return thing._name;
@@ -18,7 +18,7 @@ public class Items {
         return "";
     }
 
-    public int getIdFromName(String name){
+    public static int getIdFromName(String name){
         for (Thing thing : itemlist){
             if(thing._name.equals(name)){
                 return thing.getID();

@@ -5,15 +5,17 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 import Items.*;
+import Control.*;
+import Game.*;
 
 public class GameParser {
     
 	String [] zerlegteEingabe;
-	BufferedReader eingabe = new BufferedReader(new InputStreamReader(System.in));
+	//BufferedReader eingabe = new BufferedReader(new InputStreamReader(System.in));
 
     public GameParser () throws IOException {
     	
-        String nPaarWoerter = eingabe.readLine();
+        String nPaarWoerter = Game.getTextField();
         zerlegteEingabe = nPaarWoerter.split(" ");
         
     }
@@ -25,12 +27,16 @@ public class GameParser {
     	   Items.getThingFromName(zerlegteEingabe[1]).use();
        	   break;
        case ("examine"): //take und combine
-    	   
+    	   Items.getThingFromName(zerlegteEingabe[1]).examine();
     	   break;
        case ("take"):
-    	   
+    	   Items.getThingFromName(zerlegteEingabe[1]).take();
     	   break;
        case ("combine"):
+    	   Items.getThingFromName(zerlegteEingabe[1]).combine(Items.getIdFromName(zerlegteEingabe[2]));
+       	   break;
+       default:
+    	   System.out.println("FUCK YOU");
        }
     }
 }
