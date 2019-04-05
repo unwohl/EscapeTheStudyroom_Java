@@ -1,6 +1,6 @@
 package Items;
 
-import Game.Room;
+import Control.Room;
 
 public class Door extends Thing{
     public void unlock( Room room ){

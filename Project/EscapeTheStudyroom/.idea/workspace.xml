@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a8477f1-f92a-4990-b91b-a07d0593d763" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Control/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/Control/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Control/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/RoomConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Control/RoomConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/RoomInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Control/RoomInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/StudyRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Control/StudyRoom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Items/Door.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Items/Door.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Items/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Items/Items.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,12 +26,12 @@
     <session id="1883635888">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2267" />
+          <entry key="java" value="2318" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2267" />
+          <entry key="JAVA" value="2318" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -49,25 +56,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Game.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Control/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+            <state relative-caret-position="176">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1018#1019#0" expanded="true" />
-                <element signature="e#1047#1048#0" expanded="true" />
+                <element signature="e#1058#1059#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Items/Thing.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-638">
-              <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="37" />
+            <state relative-caret-position="286">
+              <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -87,8 +94,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Items/Items.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+            <state relative-caret-position="308">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1147#1148#0" expanded="true" />
@@ -108,7 +115,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Game/Room.java">
+        <entry file="file://$PROJECT_DIR$/src/Control/Room.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="352">
               <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
@@ -129,7 +136,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Game/RoomConstants.java">
+        <entry file="file://$PROJECT_DIR$/src/Control/RoomConstants.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="176">
               <caret line="10" selection-start-line="10" selection-end-line="10" />
@@ -164,13 +171,14 @@
         <option value="$PROJECT_DIR$/src/Items/Inventory.java" />
         <option value="$PROJECT_DIR$/src/Items/Itemlist/Desk.json" />
         <option value="$PROJECT_DIR$/src/Game/RoomConstants.java" />
-        <option value="$PROJECT_DIR$/src/Items/Thing.java" />
         <option value="$PROJECT_DIR$/src/Items/ItemInitializer.java" />
         <option value="$PROJECT_DIR$/src/Items/Door.java" />
         <option value="$PROJECT_DIR$/src/Game/Room.java" />
         <option value="$PROJECT_DIR$/src/Parser/GameParser.java" />
         <option value="$PROJECT_DIR$/src/Items/Items.java" />
         <option value="$PROJECT_DIR$/src/Game.java" />
+        <option value="$PROJECT_DIR$/src/Control/Game.java" />
+        <option value="$PROJECT_DIR$/src/Items/Thing.java" />
       </list>
     </option>
   </component>
@@ -202,26 +210,13 @@
               <item name="EscapeTheStudyroom" type="b2602c69:ProjectViewProjectNode" />
               <item name="EscapeTheStudyroom" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Game" type="462c0819:PsiDirectoryNode" />
+              <item name="Control" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EscapeTheStudyroom" type="b2602c69:ProjectViewProjectNode" />
               <item name="EscapeTheStudyroom" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Items" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EscapeTheStudyroom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EscapeTheStudyroom" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Items" type="462c0819:PsiDirectoryNode" />
-              <item name="Itemlist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EscapeTheStudyroom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EscapeTheStudyroom" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Parser" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -231,7 +226,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554493374803" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554493378587" />
     <property name="last.edited.regexp" value="\\test\\terst.txt&#10;" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -254,7 +249,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Game" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Game" />
+      <option name="MAIN_CLASS_NAME" value="Control.Game" />
       <module name="EscapeTheStudyroom" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -283,7 +278,7 @@
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1881663" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1881663" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -291,8 +286,8 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.14425163" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.14425163" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -326,7 +321,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/RoomInitializer.java">
+    <entry file="file://$PROJECT_DIR$/src/Control/RoomInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
@@ -341,7 +336,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/StudyRoom.java">
+    <entry file="file://$PROJECT_DIR$/src/Control/StudyRoom.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="329">
           <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
@@ -362,7 +357,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/RoomConstants.java">
+    <entry file="file://$PROJECT_DIR$/src/Control/RoomConstants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
@@ -411,7 +406,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Room.java">
+    <entry file="file://$PROJECT_DIR$/src/Control/Room.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
@@ -428,13 +423,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Items/Thing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-638">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Parser/GameParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -447,8 +435,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Items/Items.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+        <state relative-caret-position="308">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1147#1148#0" expanded="true" />
@@ -457,15 +445,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game.java">
+    <entry file="file://$PROJECT_DIR$/src/Control/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+        <state relative-caret-position="176">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1018#1019#0" expanded="true" />
-            <element signature="e#1047#1048#0" expanded="true" />
+            <element signature="e#1058#1059#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Items/Thing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
         </state>
       </provider>
     </entry>

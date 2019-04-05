@@ -12,6 +12,7 @@ public class Items {
         for (Thing thing:itemlist) {
             if(ID == thing.getID()){
                 return thing._name;
+
             }
         }
         return "";
