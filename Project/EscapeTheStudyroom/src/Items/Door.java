@@ -7,7 +7,9 @@ public class Door extends Thing{
 
     }
 
-    public void enter(){
+    @Override
+    public String use(){
 
+        return null;
     }
 }
