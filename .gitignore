@@ -1,6 +1,34 @@
 
-Project/EscapeTheStudyroom/.idea/workspace.xml
-Project/EscapeTheStudyroom/.idea/workspace.xml
-Project/EscapeTheStudyroom/.idea/workspace.xml
-Project/EscapeTheStudyroom/.idea/workspace.xml
-Project/EscapeTheStudyroom/.idea/workspace.xml
++
+# NetBeans specific #
+
++nbproject/private/
++
+build/
+
++nbbuild/
++
+out/
++
+dist/
++
+nbdist/
++
+nbactions.xml
+
++nb-configuration.xml
++
++
+
+# Class Files #
++
+*.class
+
++
+# Package Files #
+
++*.jar
++
+*.war
++
+*.ear
