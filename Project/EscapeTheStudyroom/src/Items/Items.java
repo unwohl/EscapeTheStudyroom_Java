@@ -15,9 +15,18 @@ public class Items {
         return "";
     }
 
+    public int getIdFromName(String name){
+        for (Thing thing : itemlist){
+            if(thing._name.equals(name)){
+                return thing.getID();
+            }
+        }
+        return 0;
+    }
+
     public static Thing getThingFromName(String name){
         for(Thing thing : itemlist){
-            if(thing._name == name){
+            if(thing._name.equals(name)){
                 return thing;
             }
         }
@@ -33,7 +42,7 @@ public class Items {
 
     public static boolean itemExists(String itemName){
         for(Thing thing : itemlist){
-            if(thing._name == itemName){
+            if(thing._name.equals(itemName)){
                 return true;
             }
         }

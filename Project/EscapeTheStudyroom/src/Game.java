@@ -8,13 +8,13 @@ import java.awt.*;
 public class Game {
 
     private static String text = "";
-    private static JTextPane lbl = new JTextPane();
+    private static JTextField lbl = new JTextField();
 
     public static void main(String [] args){
         ItemInitializer.init();
         JFrame frame = new JFrame();
         frame.setBounds(100,100,640,800);
-        JTextPane textPanel = new JTextPane();
+        JTextArea textPanel = new JTextArea();
         frame.add(textPanel);
         textPanel.setBounds(50,500,540,50);
         frame.add(lbl);
@@ -40,7 +40,7 @@ public class Game {
         takeAll();
     }
 
-    private static void setLabelText(JTextPane fuckoff, String txt){
+    private static void setLabelText(JTextArea fuckoff, String txt){
         if(fuckoff.getText().length()>1024) {
             fuckoff.setText(fuckoff.getText().substring(fuckoff.getText().length() - 1024) + "\r\n  " + txt);
         }else{
