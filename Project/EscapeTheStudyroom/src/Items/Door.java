@@ -7,7 +7,9 @@ public class Door extends Thing{
 
     }
 
-    public void enter(){
+    public void enter(String figga){
+
+        Room.enter(figga);
 
     }
 }
