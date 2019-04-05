@@ -7,7 +7,6 @@ import java.awt.*;
 
 public class Game {
 
-    private static Items items = new Items();
     private static String text = "";
     private static JTextPane lbl = new JTextPane();
 
@@ -17,9 +16,11 @@ public class Game {
         frame.setBounds(100,100,640,800);
         JTextPane textPanel = new JTextPane();
         frame.add(textPanel);
-        textPanel.setBounds(50,frame.getY()-50,540,50);
+        textPanel.setBounds(50,500,540,50);
         frame.add(lbl);
-        lbl.setBounds(50,frame.getY()-200,540,400);
+        frame.setBackground(Color.darkGray);
+        lbl.setBackground(Color.GRAY);
+        lbl.setLocation(200,200);
         lbl.setText("Yeet Yeet Yeet Yeet Yeet Yeet");
         doEverything();
         frame.setVisible(true);
