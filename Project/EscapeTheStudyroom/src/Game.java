@@ -8,13 +8,13 @@ import java.awt.*;
 public class Game {
 
     private static String text = "";
-    private static JTextField lbl = new JTextField();
+    private static JTextArea lbl = new JTextArea();
 
     public static void main(String [] args){
         ItemInitializer.init();
         JFrame frame = new JFrame();
         frame.setBounds(100,100,640,800);
-        JTextArea textPanel = new JTextArea();
+        JTextField textPanel = new JTextField();
         frame.add(textPanel);
         textPanel.setBounds(50,500,540,50);
         frame.add(lbl);
