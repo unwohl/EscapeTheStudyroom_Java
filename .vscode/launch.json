@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - GameParser",
+            "request": "launch",
+            "mainClass": "Parser.GameParser",
+            "projectName": "EscapeTheStudyroom_Java_46925fbb"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
             "mainClass": "${file}"
