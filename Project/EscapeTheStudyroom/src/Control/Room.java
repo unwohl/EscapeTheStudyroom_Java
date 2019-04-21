@@ -6,9 +6,10 @@ import java.util.List;
 
 public class Room {
 
+    private List<Room> discoveredRooms;
     private int room_Id;
     private String roomName;
-    private boolean active;
+    private boolean unlocked;
     private String _description;
     private List<Thing> itemsInRoom;
     private String[] adjacentRooms;
@@ -16,16 +17,20 @@ public class Room {
     public Room(int ROOM_ID,
             String ROOM_NAME,
             String _DESCRIPTION,
-            boolean _ACTIVE,
+            boolean _UNLOCKED,
             List<Thing> _ITEMS,
             String[] _ADJACENTS)
     {
         this.room_Id = ROOM_ID;
-        this.active = true;
+        this.unlocked = true;
         this.roomName = ROOM_NAME;
         this._description = _DESCRIPTION;
         this.itemsInRoom = _ITEMS;
         this.adjacentRooms = _ADJACENTS;
+        if (!discoveredRooms.contains(ROOM_ID))
+        {
+            discoveredRooms.add(this);
+        }
     }
 
 
@@ -33,5 +38,6 @@ public class Room {
     {
         RoomInitializer.getNewRoom(roomName);
         System.out.println("You entered the " + roomName+" .\n");
+
     }
 }
