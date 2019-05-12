@@ -6,7 +6,6 @@ import java.io.InputStreamReader;
 
 import Items.*;
 import Control.*;
-import Game.*;
 
 public class GameParser {
     
