@@ -13,6 +13,14 @@ public class GameParser {
 	String [] zerlegteEingabe;
 	//BufferedReader eingabe = new BufferedReader(new InputStreamReader(System.in));
 
+    /**
+     * Constructor with two variables to prepare the input.
+     *
+     * @variable nPaarWoerter : Hold the Sting of words
+     * @variable zerlegteEingabe : Contains the Content of varibale above but split
+     *
+     * @throws IOException
+     */
     public GameParser () throws IOException {
     	
         String nPaarWoerter = Game.Panel.getTextField();// Which input?!?
@@ -20,9 +28,21 @@ public class GameParser {
         
     }
 
-    public void verarbeiteEingabe () //Switch Bedingung
-    {
+    /**
+     * Method to execute parameter in Game (main).
+     *
+     * Switch-Case gets String to execute in specially situations.
+     *
+     * @use : Use a item
+     * @examine : Examine a item
+     * @take : Take a item
+     * @combine : combine a item with another
+     *
+     */
+    public void verarbeiteEingabe () {
+
        switch (zerlegteEingabe[0]) {
+
        case ("use"):
     	   Items.getThingFromName(zerlegteEingabe[1]).use();
        	   break;
@@ -38,6 +58,7 @@ public class GameParser {
        default:
     	   System.out.println("FUCK YOU");
        }
+
     }
 }
 
