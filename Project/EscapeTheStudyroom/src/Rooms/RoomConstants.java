@@ -1,4 +1,4 @@
-package Control;
+package Rooms;
 
 import Items.*;
 

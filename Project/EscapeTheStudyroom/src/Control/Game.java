@@ -1,6 +1,7 @@
 package Control;
 
 import Items.*;
+import Rooms.Room;
 
 public class Game {
 
