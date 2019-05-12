@@ -7,6 +7,7 @@ import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyListener;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class GamePanel {
@@ -14,6 +15,8 @@ public class GamePanel {
     private static String text = "";
     private static JTextArea lbl = new JTextArea();
     private static JTextField textPanel = new JTextField();
+
+
 
     public GamePanel(){
         JFrame frame = new JFrame();
@@ -26,6 +29,11 @@ public class GamePanel {
         lbl.setLocation(200,200);
         lbl.setEnabled(false);
         frame.setVisible(true);
+        try {
+            GameParser gp = new GameParser();
+        } catch (IOException e) {
+            System.out.println("Reeeeeeh");
+        }
         textPanel.addKeyListener(new KeyListener() {
 
             @Override
