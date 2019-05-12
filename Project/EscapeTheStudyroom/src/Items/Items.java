@@ -78,8 +78,8 @@ public class Items {
     }
 
     /**
-     * 
-     * @param thing
+     * Adds an Item to the General itemlist.
+     * @param thing the THING you want to add.
      */
     public static void addItem(Thing thing){
         itemlist.add(thing);

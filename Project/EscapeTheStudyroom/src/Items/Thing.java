@@ -1,6 +1,8 @@
 package Items;
 
-public class Thing {
+import Control.Game;
+
+public class Thing implements IThing {
     public static int ThingCount = 0;
     public static Items items = new Items();
     public static Inventory inventory = new Inventory();
@@ -30,6 +32,11 @@ public class Thing {
         this._ID = ThingCount;
         items.addItem(this);
         this.setName(name);
+        System.out.println(name);
+    }
+
+    public void init(){
+
     }
 
     /**
@@ -92,12 +99,12 @@ public class Thing {
     public void combine(int ID){
         if(this._combineable) {
             if (ID == this._combineID && inventory.itemInInventory(ID)) {
-                System.out.println("you combined " + this._name + " with " + items.getNameFromID(ID));
+                Game.Panel.setLabelText("you combined " + this._name + " with " + items.getNameFromID(ID));
                 inventory.removeFromInventorybyID(ID);
             } else if (ID == this._combineID) {
-                System.out.print("You do not have the required item in your inventory...");
+                Game.Panel.setLabelText("You do not have the required item in your inventory...");
             } else {
-                System.out.println(_abort);
+                Game.Panel.setLabelText(_abort);
             }
         }
     }
