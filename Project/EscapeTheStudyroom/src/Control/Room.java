@@ -2,26 +2,42 @@ package Control;
 
 import Items.*;
 
+import java.util.List;
+
 public class Room {
 
-    int room_Id = 0;
-    String roomName = "";
-    boolean active; //Nötig ?! Falls ja? Wie?
-    String _description = "lol du figga";
-    Items _items = new Items();
+    private List<Room> discoveredRooms;
+    private int room_Id;
+    private String roomName;
+    private boolean unlocked;
+    private String _description;
+    private List<Thing> itemsInRoom;
+    private String[] adjacentRooms;
 
-    public Room(String roomName)
+    public Room(int ROOM_ID,
+            String ROOM_NAME,
+            String _DESCRIPTION,
+            boolean _UNLOCKED,
+            List<Thing> _ITEMS,
+            String[] _ADJACENTS)
     {
-        this.active = true;
-        this.roomName = roomName;
-        System.out.print(_description);
+        this.room_Id = ROOM_ID;
+        this.unlocked = true;
+        this.roomName = ROOM_NAME;
+        this._description = _DESCRIPTION;
+        this.itemsInRoom = _ITEMS;
+        this.adjacentRooms = _ADJACENTS;
+        if (!discoveredRooms.contains(ROOM_ID))
+        {
+            discoveredRooms.add(this);
+        }
     }
 
-    /*
-    public void enter()
+
+    public static void enter(String roomName)
     {
-        new Room(roomName);
-        System.out.println("You entered the "+this.roomName+" .\n");
+        RoomInitializer.getNewRoom(roomName);
+        System.out.println("You entered the " + roomName+" .\n");
+
     }
-    */
 }

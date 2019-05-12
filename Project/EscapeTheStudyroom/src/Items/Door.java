@@ -2,14 +2,23 @@ package Items;
 
 import Control.Room;
 
-public class Door extends Thing{
-    public void unlock( Room room ){
+public class Door extends Thing {
 
+    public void unlock(String roomName)
+    {
+        Room.enter(roomName);
     }
 
-    @Override
-    public String use(){
 
-        return null;
+    public void enter(String figga) {
+
+        Room.enter(figga);
+
+        /*
+        public String use()
+        {
+            return null;
+        }
+        */
     }
 }

@@ -14,7 +14,7 @@ public class StudyRoom implements RoomConstants {
     {
         this.roomName = roomName;
         this. _description = _description;
-        Room study = new Room("study");
+        //Room study = new Room(ROOM ID: "study");
     }
 
 //TEST INTIALISATION
@@ -22,4 +22,5 @@ public static void main(String args[])
 {
     new StudyRoom();
 }
+
 }
