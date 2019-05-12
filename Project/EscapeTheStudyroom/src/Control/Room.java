@@ -15,7 +15,7 @@ public class Room {
     private List<Thing> itemsInRoom;
     private String[] adjacentRooms;
 
-    public void __initializeDiscoveredRooms()
+    public static void initializeStartRoom()
     {
         discoveredRooms.add(RoomInitializer.getNewRoom("Study"));
     }

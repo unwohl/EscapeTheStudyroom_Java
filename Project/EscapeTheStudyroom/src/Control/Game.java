@@ -13,6 +13,7 @@ public class Game {
     public static JTextField textPanel = new JTextField();
 
     public static void main(String [] args){
+        Room.initializeStartRoom();
         ItemInitializer.init();
         JFrame frame = new JFrame();
         frame.setBounds(100,100,640,800);
