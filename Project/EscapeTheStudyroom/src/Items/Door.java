@@ -1,6 +1,6 @@
-package src.Items;
+package Items;
 
-import src.Control.Room;
+import Control.Room;
 
 public class Door extends Thing {
 

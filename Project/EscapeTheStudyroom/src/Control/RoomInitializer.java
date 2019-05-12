@@ -1,4 +1,4 @@
-package src.Control;
+package Control;
 
 import java.util.List;
 

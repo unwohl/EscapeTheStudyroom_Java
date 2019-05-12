@@ -1,4 +1,4 @@
-package src.Items;
+package Items;
 
 public class Thing {
     public static int ThingCount = 0;
