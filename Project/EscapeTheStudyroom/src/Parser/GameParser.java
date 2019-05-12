@@ -7,7 +7,6 @@ import java.io.InputStreamReader;
 import Items.*;
 import Control.*;
 
-
 public class GameParser {
     
 	String [] zerlegteEingabe;
