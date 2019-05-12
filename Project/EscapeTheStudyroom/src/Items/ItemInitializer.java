@@ -1,4 +1,4 @@
-package Items;
+package src.Items;
 
 import java.io.File;
 import java.io.FileNotFoundException;

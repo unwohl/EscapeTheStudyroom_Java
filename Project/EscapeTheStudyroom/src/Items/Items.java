@@ -1,4 +1,4 @@
-package Items;
+package src.Items;
 
 import javax.swing.*;
 import java.awt.*;
