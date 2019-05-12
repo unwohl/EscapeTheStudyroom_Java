@@ -1,5 +1,6 @@
 package Parser;
 
+import java.awt.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -22,7 +23,7 @@ public class GameParser {
      */
     public GameParser () throws IOException {
     	
-        String nPaarWoerter = Game.getTextField();// Which input?!?
+        String nPaarWoerter = Game.Panel.getTextField();// Which input?!?
         zerlegteEingabe = nPaarWoerter.split(" ");
         
     }
