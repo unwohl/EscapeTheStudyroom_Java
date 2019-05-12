@@ -10,6 +10,10 @@ public class Inventory {
 
     }
 
+    /**
+     * Adds an Item to the Inventory of the player.
+     * @param thing The Thing you want to add to the Inventory of the Player.
+     */
     public void addToInventory(Thing thing){
         inventory.add(thing);
     }
