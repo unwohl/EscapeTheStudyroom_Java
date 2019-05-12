@@ -1,9 +1,12 @@
-package Control;
-
-import java.util.List;
+package Rooms;
 
 public class RoomInitializer implements RoomConstants {
 
+    /**
+     * Initializes the desired Room with current
+     * @param name
+     * @return
+     */
     public static Room getNewRoom(String name)
     {
         switch (name)

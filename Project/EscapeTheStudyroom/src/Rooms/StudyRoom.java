@@ -2,7 +2,7 @@
     DEPRECATED - SIEHE ROOMINITIALIZER
 */
 
-package Control;
+package Rooms;
 
 public class StudyRoom implements RoomConstants {
 
