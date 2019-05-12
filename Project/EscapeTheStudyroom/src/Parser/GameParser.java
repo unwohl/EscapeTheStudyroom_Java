@@ -22,10 +22,7 @@ public class GameParser {
      * @throws IOException
      */
     public GameParser () throws IOException {
-    	
-        String nPaarWoerter = Game.Panel.getTextField();// Which input?!?
-        zerlegteEingabe = nPaarWoerter.split(" ");
-        
+
     }
 
     /**
@@ -40,6 +37,9 @@ public class GameParser {
      *
      */
     public void verarbeiteEingabe () {
+
+        String nPaarWoerter = Game.Panel.getTextField();// Which input?!?
+        zerlegteEingabe = nPaarWoerter.split(" ");
 
        switch (zerlegteEingabe[0]) {
 

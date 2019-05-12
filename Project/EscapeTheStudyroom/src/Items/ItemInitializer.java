@@ -49,10 +49,8 @@ public class ItemInitializer {
                     switch(values[0]){
                         case "name":
                             if(!Items.itemExists(values[1])){
-                                System.out.println("item does not exist yet!");
                                 new Thing(values[1]);
                             }else{
-                                System.out.println("item does exist!");
                                 items.getThingFromName(values[1]).setName(values[1]);
                             }
                             name = values[1];
@@ -60,10 +58,8 @@ public class ItemInitializer {
                         case "useable":
                             if(values[1].equals("true")){
                                 items.getThingFromName(name)._useable = true;
-                                System.out.println("Yup...");
                                 break;
                             }
-                            System.out.println(values[1]);
                             break;
                         case "takeable":
                             if(values[1].equals("true")){

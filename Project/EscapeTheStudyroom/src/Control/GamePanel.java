@@ -1,8 +1,11 @@
 package Control;
 
+import Parser.GameParser;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
+import java.awt.event.KeyAdapter;
 import java.awt.event.KeyListener;
 import java.util.Scanner;
 
@@ -23,7 +26,7 @@ public class GamePanel {
         lbl.setLocation(200,200);
         lbl.setEnabled(false);
         frame.setVisible(true);
-        lbl.addKeyListener(new KeyListener() {
+        textPanel.addKeyListener(new KeyListener() {
 
             @Override
             public void keyTyped( KeyEvent e ) {
@@ -37,10 +40,8 @@ public class GamePanel {
 
             @Override
             public void keyReleased( KeyEvent e ) {
-                System.out.println(e.getKeyCode());
                 if(e.getKeyCode() == 10){
-                    String test = getTextField();
-                    System.out.println("Enter has been pressed!");
+
                 }
             }
         });
