@@ -23,15 +23,21 @@ public class GamePanel {
         frame.setVisible(true);
     }
 
+    /**
+     * Gets the Text in the Textfield and deletes the current text.
+     * @return Returns the current text as a String.
+     */
     public String getTextField(){
-        return textPanel.getText();
+        String txt = textPanel.getText();
+        textPanel.setText("");
+        return txt;
     }
 
-    private void setLabelText(JTextArea fuckoff, String txt){
-        if(fuckoff.getText().length()>1024) {
-            fuckoff.setText(fuckoff.getText().substring(fuckoff.getText().length() - 1024) + "\r\n  " + txt);
+    public void setLabelText(String txt){
+        if(lbl.getText().length()>1024) {
+            lbl.setText(lbl.getText().substring(lbl.getText().length() - 1024) + "\r\n  " + txt);
         }else{
-            fuckoff.setText(fuckoff.getText()+ "\r\n" + txt);
+            lbl.setText(lbl.getText()+ "\r\n" + txt);
         }
     }
 }
