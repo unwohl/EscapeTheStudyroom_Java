@@ -1,6 +1,0 @@
-name : Wall
-useable : false
-takeable : false
-combineable : false
-description : It's just a wall...
-ID : 2

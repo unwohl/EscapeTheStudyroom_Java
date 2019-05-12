@@ -8,7 +8,8 @@ public class Game {
 
     public static void main(String [] args){
         Room.initializeStartRoom();
-        ItemInitializer.init();
+        ItemInitializer ii = new ItemInitializer();
+        ii.init();
     }
 
 

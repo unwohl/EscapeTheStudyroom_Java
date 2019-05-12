@@ -44,16 +44,16 @@ public class GameParser {
        switch (zerlegteEingabe[0]) {
 
        case ("use"):
-    	   Items.getThingFromName(zerlegteEingabe[1]).use();
+           Game.Panel.setLabelText(Items.getThingFromName(zerlegteEingabe[1]).use());
        	   break;
        case ("examine"): //take und combine
-    	   Items.getThingFromName(zerlegteEingabe[1]).examine();
+           Game.Panel.setLabelText(Items.getThingFromName(zerlegteEingabe[1]).examine());
     	   break;
        case ("take"):
-    	   Items.getThingFromName(zerlegteEingabe[1]).take();
+           Game.Panel.setLabelText(Items.getThingFromName(zerlegteEingabe[1]).take());
     	   break;
        case ("combine"):
-    	   Items.getThingFromName(zerlegteEingabe[1]).combine(Items.getIdFromName(zerlegteEingabe[2]));
+           Items.getThingFromName(zerlegteEingabe[1]).combine(Items.getIdFromName(zerlegteEingabe[2]));
        	   break;
        default:
     	   System.out.println("FUCK YOU");

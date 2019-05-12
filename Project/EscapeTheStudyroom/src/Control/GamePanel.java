@@ -15,7 +15,7 @@ public class GamePanel {
     private static String text = "";
     private static JTextArea lbl = new JTextArea();
     private static JTextField textPanel = new JTextField();
-
+    private GameParser gp;
 
 
     public GamePanel(){
@@ -30,9 +30,9 @@ public class GamePanel {
         lbl.setEnabled(false);
         frame.setVisible(true);
         try {
-            GameParser gp = new GameParser();
+            gp = new GameParser();
         } catch (IOException e) {
-            System.out.println("Reeeeeeh");
+            System.out.println("Reeeeee");
         }
         textPanel.addKeyListener(new KeyListener() {
 
@@ -49,7 +49,7 @@ public class GamePanel {
             @Override
             public void keyReleased( KeyEvent e ) {
                 if(e.getKeyCode() == 10){
-
+                    gp.verarbeiteEingabe();
                 }
             }
         });
@@ -65,6 +65,10 @@ public class GamePanel {
         return txt;
     }
 
+    /**
+     * Adds a Line To the Text in the Game!
+     * @param txt The text you want to add.
+     */
     public void setLabelText(String txt){
         if(lbl.getText().length()>1024) {
             lbl.setText(lbl.getText().substring(lbl.getText().length() - 1024) + "\r\n  " + txt);
