@@ -28,14 +28,14 @@ public interface RoomConstants {
     public static final String KITCHEN_DESCRIPTION = "It*s even dirtier.";
     public static final boolean _UNLOCKED_KITCHEN = false;
     public static final List<Thing> _ITEMS_KITCHEN = Items.itemlist;
-    public static final String[]_ADJACENTS_KITCHEN = {};
+    public static final String[]_ADJACENTS_KITCHEN = {"Toilet", "Living Room"};
 
     public static final int TOILET_ROOM_ID = 3;
     public static final String TOILET_ROOM_NAME = "Lavatory";
     public static final String TOILET_DESCRIPTION = "You really need to clean.";
     public static final boolean _UNLOCKED_TOILET = true;
     public static final List<Thing> _ITEMS_TOILET = Items.itemlist;
-    public static final String[]_ADJACENTS_TOILET = {"Trapdoor"};
+    public static final String[]_ADJACENTS_TOILET = {"Kitchen", "Trapdoor"};
 
     public static final int SECRET_ROOM_ID = 4;
     public static final String SECRET_ROOM_NAME = "Secret Room";
