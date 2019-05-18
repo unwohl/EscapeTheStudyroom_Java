@@ -1,11 +1,6 @@
 package Items;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.util.Formatter;
 import java.util.List;
-import java.util.Scanner;
 
 public class ItemInitializer implements IThing{
 
@@ -34,7 +29,7 @@ public class ItemInitializer implements IThing{
 
     public void init() {
 
-        List<Thing> itemlist = Items.itemlist;
+        List<Thing> itemlist = ItemHolder.getInstance().itemlist;
 
     }
 

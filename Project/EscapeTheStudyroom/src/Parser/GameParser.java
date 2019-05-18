@@ -1,9 +1,6 @@
 package Parser;
 
-import java.awt.*;
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 
 import Items.*;
 import Control.*;
@@ -38,26 +35,26 @@ public class GameParser {
      */
     public void verarbeiteEingabe () {
 
-        String nPaarWoerter = Game.Panel.getTextField();// Which input?!?
-        zerlegteEingabe = nPaarWoerter.split(" ");
+            String nPaarWoerter = Game.Panel.getTextField();// Which input?!?
+            zerlegteEingabe = nPaarWoerter.split(" ");
 
-       switch (zerlegteEingabe[0]) {
+            switch (zerlegteEingabe[0]) {
 
-       case ("use"):
-           Game.Panel.setLabelText(Items.getThingFromName(zerlegteEingabe[1]).use());
-       	   break;
-       case ("examine"): //take und combine
-           Game.Panel.setLabelText(Items.getThingFromName(zerlegteEingabe[1]).examine());
-    	   break;
-       case ("take"):
-           Game.Panel.setLabelText(Items.getThingFromName(zerlegteEingabe[1]).take());
-    	   break;
-       case ("combine"):
-           Items.getThingFromName(zerlegteEingabe[1]).combine(Items.getIdFromName(zerlegteEingabe[2]));
-       	   break;
-       default:
-    	   System.out.println("FUCK YOU");
-       }
+                case ("use"):
+                    Game.Panel.setLabelText(ItemHolder.getInstance().getThingFromName(zerlegteEingabe[1]).use());
+                    break;
+                case ("examine"): //take und combine
+                    Game.Panel.setLabelText(ItemHolder.getInstance().getThingFromName(zerlegteEingabe[1]).examine());
+                    break;
+                case ("take"):
+                    Game.Panel.setLabelText(ItemHolder.getInstance().getThingFromName(zerlegteEingabe[1]).take());
+                    break;
+                case ("combine"):
+                    ItemHolder.getInstance().getThingFromName(zerlegteEingabe[1]).combine(ItemHolder.getInstance().getIdFromName(zerlegteEingabe[2]));
+                    break;
+                default:
+                    System.out.println("FUCK YOU");
+            }
 
     }
 }

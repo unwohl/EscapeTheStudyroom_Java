@@ -1,6 +1,7 @@
 package Control;
 
 import Items.*;
+import Rooms.Room;
 
 public class Game {
 
@@ -13,5 +14,8 @@ public class Game {
     }
 
 
+    private void initializeitems(){
+
+    }
 
 }

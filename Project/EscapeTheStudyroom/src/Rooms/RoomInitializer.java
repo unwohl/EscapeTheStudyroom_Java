@@ -1,9 +1,12 @@
-package Control;
-
-import java.util.List;
+package Rooms;
 
 public class RoomInitializer implements RoomConstants {
 
+    /**
+     * Initializes the desired Room with current
+     * @param name
+     * @return
+     */
     public static Room getNewRoom(String name)
     {
         switch (name)
@@ -49,7 +52,7 @@ public class RoomInitializer implements RoomConstants {
                             RoomConstants._ITEMS_SECRET,
                             RoomConstants._ADJACENTS_SECRET);
             default:
-                System.out.println("Room: " + name + "\nItems: " + itemsInRoom + "\nAdjacent Rooms: " + _ADJACENTS_LIVING);
+                System.out.println("Room: " + name + "\nItemHolder: " + itemsInRoom + "\nAdjacent Rooms: " + _ADJACENTS_LIVING);
         }
         return null;
     }
