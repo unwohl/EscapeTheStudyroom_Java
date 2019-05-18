@@ -5,10 +5,8 @@ import Parser.GameParser;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
-import java.awt.event.KeyAdapter;
 import java.awt.event.KeyListener;
 import java.io.IOException;
-import java.util.Scanner;
 
 public class GamePanel {
 
@@ -49,7 +47,7 @@ public class GamePanel {
             @Override
             public void keyReleased( KeyEvent e ) {
                 if(e.getKeyCode() == 10){
-                    gp.verarbeiteEingabe();
+                    gp.parse();
                 }
             }
         });

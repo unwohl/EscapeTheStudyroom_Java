@@ -39,7 +39,7 @@ public interface RoomConstants {
 
     public static final int SECRET_ROOM_ID = 4;
     public static final String SECRET_ROOM_NAME = "Secret Room";
-    public static final String SECRET_DESCRIPTION = "figga";
+    public static final String SECRET_DESCRIPTION = "Nogger.";
     public static final boolean _UNLOCKED_SECRET = false;
     public static final List<Thing> _ITEMS_SECRET = ItemHolder.getInstance().itemlist;
     public static final String[]_ADJACENTS_SECRET = {};
