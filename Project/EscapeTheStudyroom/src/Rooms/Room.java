@@ -64,8 +64,8 @@ public class Room {
     {
         if (!discoveredRooms.contains(roomName))
         {
-            RoomInitializer.getNewRoom(roomName);
-            return "You entered the " + roomName + " .\n";
+            discoveredRooms.add(RoomInitializer.getNewRoom(roomName));
+            return "You entered the " + roomName + " .";
         }
         else
         {
