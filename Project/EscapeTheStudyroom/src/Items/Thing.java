@@ -32,20 +32,6 @@ public class Thing implements IThing {
 
     }
 
-    // -------------- Get-Methods --------------
-
-    public String get_name() {
-        return _name;
-    }
-
-    public int get_ID() {
-        return _ID;
-    }
-
-    public String get_description() {
-        return _description;
-    }
-
 
     /**
      * Examine:

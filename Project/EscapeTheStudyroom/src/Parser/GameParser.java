@@ -33,7 +33,7 @@ public class GameParser {
      * @combine : combine a item with another
      *
      */
-    public void verarbeiteEingabe () {
+    public void parse() {
 
             String nPaarWoerter = Game.Panel.getTextField();// Which input?!?
             zerlegteEingabe = nPaarWoerter.split(" ");
