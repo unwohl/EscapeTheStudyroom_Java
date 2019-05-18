@@ -52,6 +52,8 @@ public class GameParser {
                 case ("combine"):
                     ItemHolder.getInstance().getThingFromName(zerlegteEingabe[1]).combine(ItemHolder.getInstance().getIdFromName(zerlegteEingabe[2]));
                     break;
+                case ("enter"):
+                    Rooms.Room.enter(zerlegteEingabe[1]);
                 default:
                     System.out.println("FUCK YOU");
             }
