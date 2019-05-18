@@ -53,7 +53,7 @@ public class GameParser {
                     ItemHolder.getInstance().getThingFromName(zerlegteEingabe[1]).combine(ItemHolder.getInstance().getIdFromName(zerlegteEingabe[2]));
                     break;
                 case ("enter"):
-                    Game.Panel.setLabelText(Rooms.Room.enter(zerlegteEingabe[1]));
+                    Rooms.Room.enter(zerlegteEingabe[1]);
                     break;
                 default:
                     Game.Panel.setLabelText("Boss we have a problem");

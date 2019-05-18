@@ -15,13 +15,13 @@ public class Room {
     private boolean unlocked;
     private String _description;
     private List<Thing> itemsInRoom;
-    private String[] adjacentRooms;
+    private String[] adjacentRooms = new String[5];
 
     /**
      * Instantiates discoveredRooms List with beginning Room (Study)
      */
     public static void initializeStartRoom() {
-        discoveredRooms.add(RoomInitializer.getNewRoom("Study"));
+        discoveredRooms.add(RoomInitializer.getNewRoom("bedroom"));
     }
 
     /**

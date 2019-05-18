@@ -17,7 +17,9 @@ public interface RoomConstants {
 
     public static final int LIVINGROOM_ID = 1;
     public static final String LIVINGROOM_NAME = "livingroom";
-    public static final String LIVINGROOM_DESCRIPTION = "You enter the livingroom and your eyes immediately wander towards the TV you used to watch the news in the morning, and then you see that your couch and couchchair have been rearranged along with your favorite plant. Your first urge is to make some food in the kitchen.";
+    public static final String LIVINGROOM_DESCRIPTION = "You enter the livingroom and your eyes immediately wander towards the TV you used " +
+            "\nto watch the news in the morning, and then you see that your couch and couchchair have been rearranged " +
+            "\nalong with your favorite plant. Your first urge is to make some food in the kitchen.";
     public static final boolean LIVINGROOM_UNLOCKED_ = false;
     public static final List<Thing> LIVINGROOM_ITEMS_ = new ArrayList<Thing>();
     public static final String[] LIVINGROOM_ADJACENTS = {"bedroom","bathroom","terrace"};
