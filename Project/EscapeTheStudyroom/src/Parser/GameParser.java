@@ -54,8 +54,10 @@ public class GameParser {
                     break;
                 case ("enter"):
                     Rooms.Room.enter(zerlegteEingabe[1]);
+                    break;
                 default:
-                    System.out.println("FUCK YOU");
+                    System.out.println("Boss we have a problem");
+                    break;
             }
 
     }
