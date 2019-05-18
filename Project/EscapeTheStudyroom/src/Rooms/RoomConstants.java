@@ -8,54 +8,34 @@ public interface RoomConstants {
 
     public ArrayList<Thing> itemsInRoom = new ArrayList<Thing>();
 
+    public static final int BEDROOM_ID = 0;
+    public static final String BEDROOM_NAME = "bedroom";
+    public static final String BEDROOM_DESCRIPTION = "You enter the bedroom and see the bed in which you woke up, aswell as your nightstand, your cupboard, a dildo and your favorite rag";
+    public static final boolean BEDROOM_UNLOCKED_ = true;
+    public static final List<Thing> BEDROOM_ITEMS_ = new ArrayList<Thing>();
+    public static final String[] BEDROOM_ADJACENTS = {"livingroom"};
 
-    public static final int STUDY_ROOM_ID = 0;
-    public static final String STUDY_ROOM_NAME = "Study";
-    public static final String STUDY_DESCRIPTION = "";
-    public static final boolean _UNLOCKED_STUDY = true;
-    public static final List<Thing> _ITEMS_STUDY = ItemHolder.getInstance().itemlist;
-    public static final String[]_ADJACENTS_STUDY = {"Living Room", "Toilet"};
+    public static final int LIVINGROOM_ID = 1;
+    public static final String LIVINGROOM_NAME = "livingroom";
+    public static final String LIVINGROOM_DESCRIPTION = "You enter the livingroom and your eyes immediately wander towards the TV you used to watch the news in the morning, and then you see that your couch and couchchair have been rearranged along with your favorite plant. Your first urge is to make some food in the kitchen.";
+    public static final boolean LIVINGROOM_UNLOCKED_ = false;
+    public static final List<Thing> LIVINGROOM_ITEMS_ = new ArrayList<Thing>();
+    public static final String[] LIVINGROOM_ADJACENTS = {"bedroom","bathroom","terrace"};
 
-    public static final int LIVING_ROOM_ID = 1;
-    public static final String LIVING_ROOM_NAME = "Living Room";
-    public static final String LIVING_DESCRIPTION = "It's dirty.";
-    public static final boolean _UNLOCKED_LIVING = false;
-    public static final List<Thing> _ITEMS_LIVING = ItemHolder.getInstance().itemlist;
-    public static final String[]_ADJACENTS_LIVING = {"Study", "Toilet", "Kitchen"};
+    public static final int BATHROOM_ROOM_ID = 2;
+    public static final String BATHROOM_NAME = "bathroom";
+    public static final String BATHROOM_DESCRIPTION = "You enter the bathroom and see your shower that seems to have been used recently, next to the toilet is the bin and your sink also seems to be in its usual place.";
+    public static final boolean BATHROOM_UNLOCKED_ = false;
+    public static final List<Thing> BATHROOM_ITEMS_ = new ArrayList<Thing>();
+    public static final String[] BATHROOM_ADJACENTS = {"livingroom"};
 
-    public static final int KITCHEN_ROOM_ID = 2;
-    public static final String KITCHEN_ROOM_NAME = "Kitchen";
-    public static final String KITCHEN_DESCRIPTION = "It*s even dirtier.";
-    public static final boolean _UNLOCKED_KITCHEN = false;
-    public static final List<Thing> _ITEMS_KITCHEN = ItemHolder.getInstance().itemlist;
-    public static final String[]_ADJACENTS_KITCHEN = {"Toilet", "Living Room"};
+    public static final int TERRACE_ID = 3;
+    public static final String TERRACE_NAME = "terrace";
+    public static final String TERRACE_DESCRIPTION = "You step out onto the terrace and INSTANTLY notice a big puddle of blood under your chair thats flowing towards your parsley plant and dripping off under the rail.";
+    public static final boolean TERRACE_UNLOCKED_ = false;
+    public static final List<Thing> TERRACE_ITEMS_ = new ArrayList<Thing>();
+    public static final String[] TERRACE_ADJACENTS = {"livingroom"};
 
-    public static final int TOILET_ROOM_ID = 3;
-    public static final String TOILET_ROOM_NAME = "Lavatory";
-    public static final String TOILET_DESCRIPTION = "You really need to clean.";
-    public static final boolean _UNLOCKED_TOILET = true;
-    public static final List<Thing> _ITEMS_TOILET = ItemHolder.getInstance().itemlist;
-    public static final String[]_ADJACENTS_TOILET = {"Kitchen", "Trapdoor"};
 
-    public static final int SECRET_ROOM_ID = 4;
-    public static final String SECRET_ROOM_NAME = "Secret Room";
-    public static final String SECRET_DESCRIPTION = "Nogger.";
-    public static final boolean _UNLOCKED_SECRET = false;
-    public static final List<Thing> _ITEMS_SECRET = ItemHolder.getInstance().itemlist;
-    public static final String[]_ADJACENTS_SECRET = {};
-/*
-    public static final int _ROOM_ID = 0;
-    public static final String _ROOM_NAME = "";
-    public static final String _DESCRIPTION = "";
-    public static final boolean _UNLOCKED_ = true;
-    public static final List<Thing> _ITEMS_ = ItemHolder.getInstance().itemlist;
-
-    public static final int _ROOM_ID = 0;
-    public static final String _ROOM_NAME = "";
-    public static final String _DESCRIPTION = "";
-    public static final boolean _UNLOCKED_ = true;
-    public static final List<Thing> _ITEMS_ = ItemHolder.getInstance().itemlist;
-
-*/
 
 }

@@ -13,46 +13,39 @@ public class RoomInitializer implements RoomConstants {
     {
         switch (name)
         {
-            case ("Study"):
-                return new Room(RoomConstants.STUDY_ROOM_ID,
-                            RoomConstants.STUDY_ROOM_NAME,
-                            RoomConstants.STUDY_DESCRIPTION,
-                            RoomConstants._UNLOCKED_STUDY,
-                            RoomConstants._ITEMS_STUDY,
-                            RoomConstants._ADJACENTS_STUDY)
+            case ("bedroom"):
+                return new Room(RoomConstants.BEDROOM_ID,
+                            RoomConstants.BEDROOM_NAME,
+                            RoomConstants.BEDROOM_DESCRIPTION,
+                            RoomConstants.BEDROOM_UNLOCKED_,
+                            RoomConstants.BEDROOM_ITEMS_,
+                            RoomConstants.BEDROOM_ADJACENTS)
                         ;
 
-            case ("Living Room"):
-                return new Room(RoomConstants.LIVING_ROOM_ID,
-                            RoomConstants.LIVING_ROOM_NAME,
-                            RoomConstants.LIVING_DESCRIPTION,
-                            RoomConstants._UNLOCKED_LIVING,
-                            RoomConstants._ITEMS_LIVING,
-                            RoomConstants._ADJACENTS_LIVING);
+            case ("livingroom"):
+                return new Room(RoomConstants.LIVINGROOM_ID,
+                            RoomConstants.LIVINGROOM_NAME,
+                            RoomConstants.LIVINGROOM_DESCRIPTION,
+                            RoomConstants.LIVINGROOM_UNLOCKED_,
+                            RoomConstants.LIVINGROOM_ITEMS_,
+                            RoomConstants.LIVINGROOM_ADJACENTS);
 
-            case ("Kitchen"):
-                return new Room(RoomConstants.KITCHEN_ROOM_ID,
-                                RoomConstants.KITCHEN_ROOM_NAME,
-                            RoomConstants.KITCHEN_DESCRIPTION,
-                            RoomConstants._UNLOCKED_KITCHEN,
-                            RoomConstants._ITEMS_KITCHEN,
-                            RoomConstants._ADJACENTS_KITCHEN);
+            case ("bathroom"):
+                return new Room(RoomConstants.BATHROOM_ROOM_ID,
+                            RoomConstants.BATHROOM_NAME,
+                            RoomConstants.BATHROOM_DESCRIPTION,
+                            RoomConstants.BATHROOM_UNLOCKED_,
+                            RoomConstants.BATHROOM_ITEMS_,
+                            RoomConstants.BATHROOM_ADJACENTS);
 
-            case ("Toilet"):
-                return new Room(RoomConstants.TOILET_ROOM_ID,
-                            RoomConstants.TOILET_ROOM_NAME,
-                            RoomConstants.TOILET_DESCRIPTION,
-                            RoomConstants._UNLOCKED_TOILET,
-                            RoomConstants._ITEMS_TOILET,
-                            RoomConstants._ADJACENTS_TOILET);
+            case ("terrace"):
+                return new Room(RoomConstants.TERRACE_ID,
+                            RoomConstants.TERRACE_NAME,
+                            RoomConstants.TERRACE_DESCRIPTION,
+                            RoomConstants.TERRACE_UNLOCKED_,
+                            RoomConstants.TERRACE_ITEMS_,
+                            RoomConstants.TERRACE_ADJACENTS);
 
-            case ("Trapdoor"):
-                return new Room(RoomConstants.SECRET_ROOM_ID,
-                            RoomConstants.SECRET_ROOM_NAME,
-                            RoomConstants.SECRET_DESCRIPTION,
-                            RoomConstants._UNLOCKED_SECRET,
-                            RoomConstants._ITEMS_SECRET,
-                            RoomConstants._ADJACENTS_SECRET);
         }
         return null;
     }
