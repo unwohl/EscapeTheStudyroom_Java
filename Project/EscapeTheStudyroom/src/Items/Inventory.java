@@ -4,10 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Inventory {
-    private List<Thing> inventory = new ArrayList<Thing>();
+    private static Inventory instance = new Inventory();
 
-    public Inventory(){
+    public static Inventory getInstance(){
+        return instance;
+    }
 
+    private static List<Thing> inventory = new ArrayList<Thing>();
+
+    public List<Thing> getInventory(){
+        return inventory;
     }
 
     /**
@@ -22,7 +28,7 @@ public class Inventory {
      * Removes an Item with the ID from the Inventory of the Player.
      * @param ID the ID of the Object you want to remove from the Inventory.
      */
-    public void removeFromInventorybyID(int ID){
+    public void removeFromInventory( int ID){
         for (Thing thing : inventory) {
             if(thing._ID == ID){
                 inventory.remove(thing);
