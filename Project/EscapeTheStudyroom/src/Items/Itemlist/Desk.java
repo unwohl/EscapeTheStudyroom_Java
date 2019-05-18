@@ -4,7 +4,7 @@ import Items.Thing;
 
 public class Desk extends Thing {
     
-    public static void _init_() {
+    public void init() {
         Thing Desk = new Thing("Desk");
     }
 

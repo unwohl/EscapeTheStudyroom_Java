@@ -52,7 +52,7 @@ public class RoomInitializer implements RoomConstants {
                             RoomConstants._ITEMS_SECRET,
                             RoomConstants._ADJACENTS_SECRET);
             default:
-                System.out.println("Room: " + name + "\nItems: " + itemsInRoom + "\nAdjacent Rooms: " + _ADJACENTS_LIVING);
+                System.out.println("Room: " + name + "\nItemHolder: " + itemsInRoom + "\nAdjacent Rooms: " + _ADJACENTS_LIVING);
         }
         return null;
     }

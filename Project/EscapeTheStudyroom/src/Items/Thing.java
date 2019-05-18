@@ -3,8 +3,6 @@ package Items;
 import Control.Game;
 
 public class Thing implements IThing {
-    public static int ThingCount = 0;
-    public static Items items = new Items();
     public static Inventory inventory = new Inventory();
     static String _abort = "You can't do that...";
 
@@ -12,8 +10,8 @@ public class Thing implements IThing {
     public boolean _takeable = false;
     public boolean _combineable = false;
 
-    public String _description;
-    public String _name;
+    private String _description;
+    private String _name;
     public String _use_msg;
     public String _take_msg;
     public String _combine_msg;
@@ -22,17 +20,12 @@ public class Thing implements IThing {
     public int _combineID;
 
     public Thing(){
-        ThingCount++;
-        this._ID = ThingCount;
-        items.addItem(this);
+        ItemHolder.getInstance().addItem(this);
     }
 
     public Thing(String name){
-        ThingCount++;
-        this._ID = ThingCount;
-        items.addItem(this);
-        this.setName(name);
-        System.out.println(name);
+        ItemHolder.getInstance().addItem(this);
+        this._name = name;
     }
 
     public void init(){
@@ -56,11 +49,13 @@ public class Thing implements IThing {
     }
 
     /**
-     * Use this to give an Object a custom name.
-     * @param arg Custom Name for the Object.
+     * REEEEEE
+     * 
+     * @return
      */
-    public void setName(String arg){
-        this._name = arg;
+    public String getName() {
+
+        return _name;
     }
 
     /**
@@ -99,7 +94,7 @@ public class Thing implements IThing {
     public void combine(int ID){
         if(this._combineable) {
             if (ID == this._combineID && inventory.itemInInventory(ID)) {
-                Game.Panel.setLabelText("you combined " + this._name + " with " + items.getNameFromID(ID));
+                Game.Panel.setLabelText("you combined " + this._name + " with " + ItemHolder.getInstance().getNameFromID(ID));
                 inventory.removeFromInventorybyID(ID);
             } else if (ID == this._combineID) {
                 Game.Panel.setLabelText("You do not have the required item in your inventory...");

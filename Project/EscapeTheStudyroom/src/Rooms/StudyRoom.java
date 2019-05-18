@@ -7,7 +7,7 @@ package Rooms;
 public class StudyRoom implements RoomConstants {
 
     String roomName = "Study";
-    String _description = "Your study. A desk lamp dimly illuminates the following Items:";
+    String _description = "Your study. A desk lamp dimly illuminates the following ItemHolder:";
     int room_Id = 0;
 
     public void enter(String roomName, String _description)

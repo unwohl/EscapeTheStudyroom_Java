@@ -78,7 +78,7 @@ public class Room {
                 }
                 i++;
             }
-            System.out.println("Room: " + roomName + "\nItems: " + discoveredRooms.get(i).itemsInRoom + "\nAdjacent Rooms: " + discoveredRooms.get(i).adjacentRooms);
+            System.out.println("Room: " + roomName + "\nItemHolder: " + discoveredRooms.get(i).itemsInRoom + "\nAdjacent Rooms: " + discoveredRooms.get(i).adjacentRooms);
         }
     }
 }

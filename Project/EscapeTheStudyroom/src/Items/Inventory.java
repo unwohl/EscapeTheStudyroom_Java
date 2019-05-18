@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Inventory {
-    public static List<Thing> inventory = new ArrayList<Thing>();
+    private List<Thing> inventory = new ArrayList<Thing>();
 
     public Inventory(){
 
