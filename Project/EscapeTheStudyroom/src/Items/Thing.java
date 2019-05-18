@@ -3,7 +3,6 @@ package Items;
 import Control.Game;
 
 public class Thing implements IThing {
-    public static Inventory inventory = new Inventory();
     static String _abort = "You can't do that...";
 
     public boolean _useable = false;
@@ -66,8 +65,8 @@ public class Thing implements IThing {
      */
     public String take(){
         if(this._takeable) {
-            if(!inventory.itemInInventory(this)) {
-                inventory.addToInventory(this);
+            if(!Inventory.getInstance().itemInInventory(this)) {
+                Inventory.getInstance().addToInventory(this);
                 return this._take_msg;
             }else{
                 return "This item is already in your inventory!";
@@ -94,9 +93,9 @@ public class Thing implements IThing {
      */
     public void combine(int ID){
         if(this._combineable) {
-            if (ID == this._combineID && inventory.itemInInventory(ID)) {
+            if (ID == this._combineID && Inventory.getInstance().itemInInventory(ID)) {
                 Game.Panel.setLabelText("you combined " + this._name + " with " + ItemHolder.getInstance().getNameFromID(ID));
-                inventory.removeFromInventorybyID(ID);
+                Inventory.getInstance().removeFromInventory(ID);
             } else if (ID == this._combineID) {
                 Game.Panel.setLabelText("You do not have the required item in your inventory...");
             } else {

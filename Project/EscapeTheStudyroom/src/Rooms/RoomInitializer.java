@@ -3,6 +3,7 @@ package Rooms;
 import Control.Game;
 import Items.*;
 import Items.Itemlist.Nightstand;
+import Items.Itemlist.Nightstand_Key;
 
 public class RoomInitializer implements RoomConstants {
 
@@ -17,6 +18,7 @@ public class RoomInitializer implements RoomConstants {
         {
             case ("bedroom"):
                 RoomConstants.BEDROOM_ITEMS_.add(new Nightstand());
+                RoomConstants.BEDROOM_ITEMS_.add(new Nightstand_Key());
                 return new Room(RoomConstants.BEDROOM_ID,
                             RoomConstants.BEDROOM_NAME,
                             RoomConstants.BEDROOM_DESCRIPTION,
