@@ -53,8 +53,6 @@ public class RoomInitializer implements RoomConstants {
                             RoomConstants._UNLOCKED_SECRET,
                             RoomConstants._ITEMS_SECRET,
                             RoomConstants._ADJACENTS_SECRET);
-            default:
-                Game.Panel.setLabelText("Room: " + name + "\nItemHolder: " + itemsInRoom + "\nAdjacent Rooms: " + _ADJACENTS_LIVING);
         }
         return null;
     }
