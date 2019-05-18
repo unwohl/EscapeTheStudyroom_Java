@@ -10,8 +10,8 @@ public class Thing implements IThing {
     public boolean _takeable = false;
     public boolean _combineable = false;
 
-    private String _description;
-    private String _name;
+    public String _description;
+    public String _name;
     public String _use_msg;
     public String _take_msg;
     public String _combine_msg;

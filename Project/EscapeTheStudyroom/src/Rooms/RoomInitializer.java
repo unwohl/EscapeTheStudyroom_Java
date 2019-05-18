@@ -1,6 +1,8 @@
 package Rooms;
 
 import Control.Game;
+import Items.*;
+import Items.Itemlist.Nightstand;
 
 public class RoomInitializer implements RoomConstants {
 
@@ -14,6 +16,7 @@ public class RoomInitializer implements RoomConstants {
         switch (name)
         {
             case ("bedroom"):
+                RoomConstants.BEDROOM_ITEMS_.add(new Nightstand());
                 return new Room(RoomConstants.BEDROOM_ID,
                             RoomConstants.BEDROOM_NAME,
                             RoomConstants.BEDROOM_DESCRIPTION,
