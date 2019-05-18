@@ -20,14 +20,14 @@ public class Room {
     /**
      * Instantiates discoveredRooms List with beginning Room (Study)
      */
-    public static void initializeStartRoom()
-    {
+    public static void initializeStartRoom() {
         discoveredRooms.add(RoomInitializer.getNewRoom("Study"));
     }
 
     /**
      * Constructor
      * Initializes a Room with given parameters
+     *
      * @param ROOM_ID
      * @param ROOM_NAME
      * @param _DESCRIPTION
@@ -36,20 +36,18 @@ public class Room {
      * @param _ADJACENTS
      */
     public Room(int ROOM_ID,
-            String ROOM_NAME,
-            String _DESCRIPTION,
-            boolean _UNLOCKED,
-            List<Thing> _ITEMS,
-            String[] _ADJACENTS)
-    {
+                String ROOM_NAME,
+                String _DESCRIPTION,
+                boolean _UNLOCKED,
+                List<Thing> _ITEMS,
+                String[] _ADJACENTS) {
         this.room_Id = ROOM_ID;
         this.unlocked = true;
         this.roomName = ROOM_NAME;
         this._description = _DESCRIPTION;
         this.itemsInRoom = _ITEMS;
         this.adjacentRooms = _ADJACENTS;
-        if (!discoveredRooms.contains(ROOM_ID))
-        {
+        if (!discoveredRooms.contains(ROOM_ID)) {
             discoveredRooms.add(this);
         }
     }
@@ -62,10 +60,10 @@ public class Room {
      */
     public static String enter(String roomName)
     {
-        if (!discoveredRooms.contains(roomName))
+        if (!roomDiscovered(roomName))
         {
-            discoveredRooms.add(RoomInitializer.getNewRoom(roomName));
-            return "You entered the " + roomName + " .";
+            RoomInitializer.getNewRoom(roomName);
+            Game.Panel.setLabelText("You entered the " + roomName + " .");
         }
         else
         {
@@ -79,8 +77,22 @@ public class Room {
                 }
                 i++;
             }
-            Game.Panel.setLabelText("Room: " + roomName + "\nItems: " + discoveredRooms.get(desiredRoom).itemsInRoom + "\nAdjacent Rooms: " + discoveredRooms.get(i).adjacentRooms);
-            return null;
+            Game.Panel.setLabelText("Room: " + roomName + "\n" + discoveredRooms.get(desiredRoom)._description + "\nItems: " +
+                             discoveredRooms.get(desiredRoom).itemsInRoom + "\nAdjacent Rooms: " + discoveredRooms.get
+                            (desiredRoom).adjacentRooms);
         }
+        return null;
+    }
+
+
+    private static boolean roomDiscovered(String roomName)
+    {
+        boolean roomDiscovered = false;
+        for(int i=0; i<discoveredRooms.size(); i++)
+        {
+            if(discoveredRooms.get(i).roomName.equalsIgnoreCase(roomName))
+            { roomDiscovered = true; }
+        }
+        return roomDiscovered;
     }
 }
