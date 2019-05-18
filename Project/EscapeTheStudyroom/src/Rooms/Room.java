@@ -69,7 +69,7 @@ public class Room {
         else
         {
             int i = 0;
-            int desiredRoom;
+            int desiredRoom = 0;
             for (Room r : discoveredRooms)
             {
                 if (roomName.equals(r.roomName))
@@ -78,7 +78,7 @@ public class Room {
                 }
                 i++;
             }
-            System.out.println("Room: " + roomName + "\nItemHolder: " + discoveredRooms.get(i).itemsInRoom + "\nAdjacent Rooms: " + discoveredRooms.get(i).adjacentRooms);
+            System.out.println("Room: " + roomName + "\nItems: " + discoveredRooms.get(desiredRoom).itemsInRoom + "\nAdjacent Rooms: " + discoveredRooms.get(i).adjacentRooms);
         }
     }
 }
