@@ -53,7 +53,7 @@ public class GameParser {
                     ItemHolder.getInstance().getThingFromName(zerlegteEingabe[1]).combine(ItemHolder.getInstance().getIdFromName(zerlegteEingabe[2]));
                     break;
                 case ("enter"):
-                    Rooms.Room.enter(zerlegteEingabe[1]);
+                    Game.Panel.setLabelText(Rooms.Room.enter(zerlegteEingabe[1]));
                 default:
                     System.out.println("FUCK YOU");
             }

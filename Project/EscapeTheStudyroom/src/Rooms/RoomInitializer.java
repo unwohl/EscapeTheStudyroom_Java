@@ -1,5 +1,7 @@
 package Rooms;
 
+import Control.Game;
+
 public class RoomInitializer implements RoomConstants {
 
     /**
@@ -52,7 +54,7 @@ public class RoomInitializer implements RoomConstants {
                             RoomConstants._ITEMS_SECRET,
                             RoomConstants._ADJACENTS_SECRET);
             default:
-                System.out.println("Room: " + name + "\nItemHolder: " + itemsInRoom + "\nAdjacent Rooms: " + _ADJACENTS_LIVING);
+                Game.Panel.setLabelText("Room: " + name + "\nItemHolder: " + itemsInRoom + "\nAdjacent Rooms: " + _ADJACENTS_LIVING);
         }
         return null;
     }

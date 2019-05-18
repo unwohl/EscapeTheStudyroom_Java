@@ -1,5 +1,6 @@
 package Rooms;
 
+import Control.Game;
 import Items.*;
 
 import java.util.List;
@@ -59,12 +60,12 @@ public class Room {
      * Use this to enter the desired room.
      * @param roomName
      */
-    public static void enter(String roomName)
+    public static String enter(String roomName)
     {
         if (!discoveredRooms.contains(roomName))
         {
             RoomInitializer.getNewRoom(roomName);
-            System.out.println("You entered the " + roomName + " .\n");
+            return "You entered the " + roomName + " .\n";
         }
         else
         {
@@ -78,7 +79,8 @@ public class Room {
                 }
                 i++;
             }
-            System.out.println("Room: " + roomName + "\nItems: " + discoveredRooms.get(desiredRoom).itemsInRoom + "\nAdjacent Rooms: " + discoveredRooms.get(i).adjacentRooms);
+            Game.Panel.setLabelText("Room: " + roomName + "\nItems: " + discoveredRooms.get(desiredRoom).itemsInRoom + "\nAdjacent Rooms: " + discoveredRooms.get(i).adjacentRooms);
+            return null;
         }
     }
 }
