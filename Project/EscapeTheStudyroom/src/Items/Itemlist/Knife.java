@@ -11,7 +11,7 @@ public class Knife extends Thing {
 
         this._name = "";
         this._description = "";
-        this.
+
 
     }
 }

@@ -1,0 +1,53 @@
+Story and Brainstorming
+
+	* Wir wachen im Schlafzimmer auf
+		- Bett * 
+		- Tür *
+		- Nachtschrank (default close) * 
+		- Nachtschrank-Key *
+		- Kleiderschrank (default close)
+		- Kleiderschrank-Key
+		- Dildo *
+		- Teppich
+		- Matratze * 
+		
+	* Livingroom
+		- Fernseher
+		- Kommode
+		- Couch
+		- Sessel
+		- Zimmerpflanze
+		- Fenster
+		
+		- Küche
+		- Herd 
+		- Waschbecken
+		- Kühlschrank
+		- Backofen
+		- Spühlmaschiene
+		- Geschirrregal
+		- Mülleimer 
+		
+	* Terrace
+		- Pflanze
+		- Geländer
+		- Blutspuren
+		- Plastikbeutel
+		- Stuhl
+		
+	* Toilet
+		- Klo
+		- Waschbecken
+		 - Spiegel
+		- Mülleimer
+		- Dusche
+		- Klospühlung
+		- Seifenspender
+		
+		
+Story:
+Weiblicher Charakter. Wir wachen auf und unser Arsch tut weh.
+		
+- Fenster für Höheninformationen.
+- Türen default geschlossen -> Key finden durch suchen.
+
